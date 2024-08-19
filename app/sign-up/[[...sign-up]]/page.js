@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, Typography, Button, Box, Container } from "@mui/material";  // Import Container correctly
 import Link from 'next/link';
-import { SignUp} from '@clerk/nextjs';
+import { SignIn, SignUp } from '@clerk/nextjs';
 
 export default function SignUpPage() {
   return (
@@ -26,7 +26,7 @@ export default function SignUpPage() {
         <Typography variant="h4">  {/* Corrected 'varirant' to 'variant' */}
           Sign Up
         </Typography>
-        <SignUp/>
+        <SignUp />
       </Box>
     </Container>
   );
